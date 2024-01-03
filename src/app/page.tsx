@@ -1,13 +1,21 @@
 import Image from 'next/image'
+import venue from './assets/venue.jpg'
+import styles from './ui/styles.module.css'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p>
+    <main>
+      <div className={styles.bgWrap}>
+        <Image
+          src={venue}
+          alt="venue background"
+          fill
+          sizes="100vw"
+        />
+      </div>
+        <p className={styles.bgText}>
           Hi I&#39;m Ivy - welcome to my website!
         </p>
-      </div>
     </main>
   )
 }
