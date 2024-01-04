@@ -1,3 +1,3 @@
 export default function resume() {
-  return 'Resume Page'
+  return 'Contact Page'
 }

@@ -14,7 +14,9 @@ export default function Home() {
         />
       </div>
         <p className={styles.bgText}>
-          Hi I&#39;m Ivy - welcome to my website!
+          Hi I&#39;m Ivy!
+          <br/>
+          Welcome to my website!
         </p>
     </main>
   )
