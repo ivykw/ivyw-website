@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import lychee1 from '../assets/lychee1.jpg'
-import lychee2 from '../assets/lychee2.jpg'
+import Image from 'next/image';
+import lychee1 from '../assets/lychee1.jpg';
+import lychee2 from '../assets/lychee2.jpg';
 
 export default function info() {
   return (
