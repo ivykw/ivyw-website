@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import lychee1 from '../assets/lychee1.jpg';
 import lychee2 from '../assets/lychee2.jpg';
+import styles from '../ui/styles.module.css';
 
 export default function info() {
   return (
+    <div className={styles.aboutDrop}>
     <div className="grid grid-cols-2 gap-20 justify-items-center items-center">
         <Image
           src={lychee1}
@@ -17,6 +19,7 @@ export default function info() {
           alt="samoyed laying down on couch"
           height="300"
         />
+    </div>
     </div>
   )
 }

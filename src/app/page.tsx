@@ -8,7 +8,7 @@ export default function Home() {
       <div className={styles.bgWrap}>
         <Image
           src={venue}
-          alt="venue background"
+          alt="Culinary Institute of America - Greystone"
           fill
           sizes="100vw"
         />

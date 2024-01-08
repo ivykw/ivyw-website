@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Exo_2 } from 'next/font/google'
 import './globals.css'
 import Navbar from './ui/navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const exo = Exo_2({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Ivy Wong\'s Website',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={exo.className}>
         <Navbar />
         {children}
       s</body>
