@@ -5,8 +5,8 @@ import styles from '../ui/styles.module.css';
 
 export default function info() {
   return (
-    <div className={styles.aboutDrop}>
-    <div className="grid grid-cols-2 gap-10 justify-items-center items-center">
+    <div className={styles.dropAni}>
+    <div className="grid grid-cols-2 mt-20 gap-10 justify-items-center items-center">
         <Image
           src={lychee1}
           alt="samoyed puppy with toy"

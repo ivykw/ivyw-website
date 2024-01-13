@@ -16,6 +16,15 @@
   }
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(0.2);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .bgWrap {
   position: fixed;
   height: 100vh;
@@ -36,6 +45,14 @@
   animation: fadeIn 4s;
 }
 
-.aboutDrop {
+.dropAni {
   animation: dropIn 2s;
+}
+
+.spinAni {
+  animation: spin 2s;
+}
+
+.fadeAni {
+  animation: fadeIn 2s;
 }
