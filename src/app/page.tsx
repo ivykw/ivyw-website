@@ -12,12 +12,19 @@ export default function Home() {
           fill
           sizes="100vw"
         />
-      </div>
-        <p className={styles.bgText}>
-          Hi I&#39;m Ivy!
+      </div >
+      <div className={styles.bgText}>
+        <p className="text-4xl">
+          Hi I&apos;m Ivy!
           <br/>
           Welcome to my website!
         </p>
+      </div>
+      <div className="absolute bottom-0 right-2">
+        <p className={styles.bgText}>
+          Photographer: Rebecca Skidgel
+        </p>
+      </div>
     </main>
   )
 }

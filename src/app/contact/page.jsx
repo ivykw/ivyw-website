@@ -11,14 +11,12 @@ export default function resume() {
         <div className="text-3xl">
           Contact Me
         </div>
-        <div className={styles.spinAni}>
           <Image
             src={lychee1}
             alt="Picture of Ivy Wong"
             width="300"
             height="auto"
           />
-          </div>
         <div className="text-xl w-fit">
           Ivy Wong
         </div>
