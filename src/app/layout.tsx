@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={exo.className}>
         <Navbar />
         {children}
-      s</body>
+      </body>
     </html>
   )
 }

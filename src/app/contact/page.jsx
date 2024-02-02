@@ -7,16 +7,16 @@ import styles from '../ui/styles.module.css';
 export default function resume() {
   return (
     <div className={styles.dropAni}>
+      <h1>
+        Contact Me
+      </h1>
       <div className="flex flex-col gap-y-10 text-white px-20 mt-20 items-center">
-        <div className="text-3xl">
-          Contact Me
-        </div>
-          <Image
-            src={lychee1}
-            alt="Picture of Ivy Wong"
-            width="300"
-            height="auto"
-          />
+        <Image
+          src={lychee1}
+          alt="Picture of Ivy Wong"
+          width="300"
+          height="auto"
+        />
         <div className="text-xl w-fit">
           Ivy Wong
         </div>

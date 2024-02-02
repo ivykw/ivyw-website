@@ -1,19 +1,19 @@
 import Image from 'next/image';
 import lychee1 from '../assets/lychee1.jpg';
-import lychee2 from '../assets/lychee2.jpg';
+import crochet1 from '../assets/crochet1.jpg';
 import styles from '../ui/styles.module.css';
 
 export default function info() {
   return (
     <div className={styles.dropAni}>
-      <div className="text-white text-4xl">
+      <h1>
         About Me
-      </div>
+      </h1>
       <div className="grid grid-cols-2 mt-20 gap-10 justify-items-center items-center text-white px-20">
           <Image
             src={lychee1}
             alt="samoyed puppy with toy"
-            height="300"
+            height="fill"
             width="auto"
           />
         <p>
@@ -29,14 +29,14 @@ export default function info() {
       <div>
           <p>
             In my free time I enjoy baking and crocheting (yes, I have been called grandma several times!). Now that I think about it, I guess it's not
-            not a surprise I like the feeling of creating... the sense of satisfaction of making something that make people happy is something I appreciate
-            a lot.
+            not a surprise I like the feeling of creating something with code... the sense of satisfaction of making something that make people happy is
+            something I appreciate a lot.
           </p>
         </div>
         <Image
-            src={lychee2}
-            alt="samoyed laying down on couch"
-            height="300"
+            src={crochet1}
+            alt="Pokemon amigurumi"
+            height="fill"
             width="auto"
           />
       </div>
