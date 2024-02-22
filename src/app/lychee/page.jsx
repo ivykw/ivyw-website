@@ -4,50 +4,60 @@ import lychee2 from '../assets/lychee2.jpg';
 import lychee3 from '../assets/lychee3.jpg';
 import lychee4 from '../assets/lychee4.jpg';
 import lychee5 from '../assets/lychee5.jpg';
+import lychee6 from '../assets/lychee6.jpg';
+import styles from '../ui/styles.module.css';
 
-export default function lychee() {
-  const pics = [
+
+export default function Lychee() {
+
+  const images = [
     {
       source: lychee1,
-      description: "Lychee with her squeaky squirrel."
+      description: "Chomping on her squeaky squirrel."
     },
     {
       source: lychee2,
-      description: "Close-up of when she was a puppy."
+      description: "Fluffy loaf laying down."
     },
     {
       source: lychee3,
-      description: "Rolling around doing doggy yoga."
+      description: "Close-up of her fluffy face."
     },
     {
       source: lychee4,
-      description: "Lazing on the couch after a walk."
+      description: "Lychee splayed on the floor."
     },
     {
       source: lychee5,
-      description: "Laying on the bed like she owns the entire thing!"
+      description: "Lazing on the couch."
+    },
+    {
+      source: lychee6,
+      description: "Laying on the bed."
     }
   ];
 
-  const displayPics = pics.map((pic, index) =>
+  const displayPics = images.map((image, index) =>
     <div key={index}>
-      <Image
-        src={pic.source}
-        alt="samoyed dog"
-        width="400"
-        height="auto"
-      />
-      <p>{pic.description}</p>
+      <div className="transition transform hover:scale-110">
+        <Image
+          src={image.source}
+          alt="samoyed dog"
+          width="400"
+          height="auto"
+        />
+        <p className="text-center">{image.description}</p>
+      </div>
     </div>
   )
 
   return (
-    <div>
+    <div className={styles.dropAni}>
       <div className="text-center">
         <h1>Lychee&apos;s Page</h1><br />
         <p>I have a page dedicated to my dog Lychee because people can never seem to get enough of her fluffy face!</p><br />
       </div>
-      <div className="text-center flex flex-col place-items-center gap-10">
+      <div className="text-center flex flex-col place-items-center gap-y-12">
         {displayPics}
       </div>
     </div>

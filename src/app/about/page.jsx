@@ -3,7 +3,7 @@ import lychee1 from '../assets/lychee1.jpg';
 import crochet1 from '../assets/crochet1.jpg';
 import styles from '../ui/styles.module.css';
 
-export default function info() {
+export default function Info() {
   return (
     <div className={styles.dropAni}>
       <h1>

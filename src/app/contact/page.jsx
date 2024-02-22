@@ -4,7 +4,7 @@ import linkedin from '../assets/linkedin.png';
 import github from '../assets/github.png';
 import styles from '../ui/styles.module.css';
 
-export default function resume() {
+export default function Contact() {
   return (
     <div className={styles.dropAni}>
       <h1>
@@ -20,7 +20,7 @@ export default function resume() {
         <div className="text-xl w-fit">
           Ivy Wong
         </div>
-        <div className="w-fit">
+        <div className="w-fit transition transform hover:scale-110">
           <a href="https://www.linkedin.com/in/ivy-k-wong/">
             <div className="flex flex-row space-x-5">
               <Image
@@ -35,7 +35,7 @@ export default function resume() {
             </div>
           </a>
         </div>
-        <div className="w-fit">
+        <div className="w-fit transition transform hover:scale-110">
           <a href="https://github.com/ivykw">
           <div className="flex flex-row space-x-5">
               <div className="bg-white rounded-sm">
